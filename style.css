@@ -20,20 +20,20 @@ p {
   height: 50%;
   font-size: 30px;
   color: white;
-  position: fixed;
   top:-100%; right:-100%; left:-100%; bottom:-100%;
   margin:auto;
+  padding-top: 50px;
 }
 p:after {
   text-align: center;
   content: "";
-  height: 60%;
+  height: 50%;
   top: 0%;
   animation: abomination1 5s linear 1;
   animation-fill-mode: both;
-  position: fixed;
   top:-100%; right:-100%; left:-100%; bottom:-100%;
   margin:auto;
+  padding-top: 50px;
 }
 @keyframes abomination1 {
   0% {
