@@ -220,6 +220,17 @@ p:after {
 .opensource>a {
   z-index: 9999;
 }
+.goose {
+	position: absolute;
+	display: block;
+	padding-bottom: -200px;
+	margin-left: 45%;
+	margin-right: 45%;
+	width: 10%;
+	/* whats 9 plus 10 */
+	height: 21%;
+	/* you stupid */
+}
 body {
   margin: 0;
   margin-top: -40px;
