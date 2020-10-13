@@ -1,4 +1,4 @@
-p,h1,h2,.osubemani,.mutefortwitch,.elitelooter,.nover {font-family: "Comfortaa", sans-serif}
+p,h1,h2,.osubemani,.mutefortwitch,.elitelooter,.nover,.bik {font-family: "Comfortaa", sans-serif}
 html {
 	height: 100%;
 	overflow: auto;
@@ -229,6 +229,17 @@ p:after {
   font-size: 25px;
   color: white;
   margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.bik {
+  text-align: center;
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  margin-top: 250px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
