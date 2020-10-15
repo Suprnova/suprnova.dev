@@ -221,7 +221,6 @@ p:after {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding-bottom: 50px;
 }
 .nover {
   text-align: center;
@@ -232,7 +231,6 @@ p:after {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding-bottom: 50px;
 }
 .bik {
   text-align: center;
@@ -243,7 +241,6 @@ p:after {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding-bottom: 50px;
 }
 .opensource {
   opacity: .5;
