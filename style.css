@@ -1,4 +1,4 @@
-p,h1,h2,.osubemani,.mutefortwitch,.elitelooter,.nover,.bik,.pog,.translate {font-family: "Comfortaa", sans-serif}
+p,h1,h2,.osubemani,.mutefortwitch,.elitelooter,.nover,.bik,.pog,.chunithm {font-family: "Comfortaa", sans-serif}
 html {
 	height: 100%;
 	overflow: auto;
@@ -253,7 +253,7 @@ p:after {
   margin-right: auto;
   width: 100%;
 }
-.translate {
+.chunithm {
   text-align: center;
   position: absolute;
   font-size: 25px;
