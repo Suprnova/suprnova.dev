@@ -1,0 +1,231 @@
+body {
+    font-family: "Comfortaa", sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300% 300%;
+    animation: gradient 30s ease infinite;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+body,
+a {
+    color: #FFF;
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem
+}
+
+p {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0
+}
+
+a {
+    text-decoration: none;
+    appearance: none;
+}
+
+img {
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.socials a {
+    font-size: 3rem;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.bi-github {
+    padding-left: 4rem;
+}
+.bi-twitter {
+    padding-right: 4rem;
+}
+.bi-file-earmark-code {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+}
+.socials a:hover {
+    color: #FFF;
+    opacity: 1;
+}
+
+.icon-left {
+    width: 30%;
+}
+.icon-left img {
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+}
+.text-right {
+    width: 70%;
+}
+
+
+.projects {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.projects p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 0.5rem;
+}
+.projects a {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 0 5px #000;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.projects a:hover {
+    color: #FFF;
+    box-shadow: 0 0 10px #000;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.projects a:not(.elite):not(.chunithm) {
+    flex-direction: column;
+}
+
+.icon-left, .text-right, .text-container {
+    margin: auto 0;
+}
+
+.bik h3, .shell h3, .nover h3 {
+    margin-bottom: 0;
+}
+
+.elite {
+    background-color: hsl(161, 67%, 47%);
+}
+.elite:hover {
+    background-color: hsl(161, 67%, 42%);
+}
+
+.chunithm {
+    background-color: hsl(40, 94%, 49%);
+}
+.chunithm:hover {
+    background-color: hsl(40, 94%, 44%);
+}
+
+.pogcode, .rgc {
+    background-color: hsl(174, 71%, 50%);
+}
+.pogcode:hover, .rgc:hover {
+    background-color: hsl(174, 71%, 45%);
+}
+
+.bik, .shell, .nover {
+    background-color: hsl(12, 79%, 72%);
+}
+.bik:hover, .shell:hover, .nover:hover {
+    background-color: hsl(12, 79%, 67%);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+    .projects {
+        grid-template-columns: repeat(12, 1fr) !important;
+    }
+    .grid-col-span-6 {
+        grid-column: span 6 !important;
+    }
+    .grid-col-span-3 {
+        grid-column: span 3 !important;
+    }
+    .grid-col-span-2 {
+        grid-column: span 2 !important;
+    }
+    .chunithm {
+        grid-row-start: 2;
+    }
+}
+@media (min-width: 992px) {
+    .projects {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .elite, .chunithm, .pogcode, .rgc {
+        grid-column: span 3;
+    }
+    .bik, .shell, .nover {
+        grid-column: span 2;
+    }
+}
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .socials a {
+        font-size: 2.5rem;
+    }
+    .bi-github {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .bi-twitter {
+        padding-right: 2rem;
+    }
+    .bi-file-earmark-code {
+        position: initial;
+        padding-left: 2rem;
+    }
+}
+@media (max-width: 419.98px) {
+    .elite, .chunithm {
+        flex-direction: column;
+    }
+    .icon-left, .text-right {
+        width: auto;
+    }
+    .icon-left img {
+        height: 100px;
+    }
+}
+/* Galaxy Fold stuff... */
+@media (max-width: 349.98px) {
+    .bi-github {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .bi-twitter {
+        padding-right: 1rem;
+    }
+    .bi-file-earmark-code {
+        padding-left: 1rem;
+    }
+}

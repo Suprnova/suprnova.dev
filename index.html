@@ -1,41 +1,73 @@
 <!DOCTYPE html>
-<html>
-<title>Suprnova</title>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="customCSS/balloon.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suprnova</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-<div>
-  <h1 class="animate__animated animate__fadeInUp animate__slow">hi, i'm nova</h1>
-  <p></p>
-  <div class="social animate__animated animate__delay-5s animate__slow animate__fadeInUp">
-  <a class="hvr-float" href="https://twitter.com/suprnova123" target="_blank">
-	<img src="index_files/twitter.png" height="40">
-  </a>
-  <a class="hvr-float" href="https://github.com/Suprnova" target="_blank">
-	<img src="index_files/github.png" height="40">
-  </a>
-  </div>
-  <img class="goose animate__animated animate__delay-4s animate__slower animate__fadeInUp" src="index_files/goose.gif" height="300">
-  <h2 class="projects animate__animated animate__delay-5s animate__slow animate__fadeInUp">Projects</h2>
-  <a aria-label="A Discord bot all about opening crates and playing games!" data-balloon-pos="up" class= "elitelooter animate__animated animate__delay-5s animate__slower animate__fadeInLeft" href="https://top.gg/bot/elitelooter" target="_blank" style="text-decoration:none">Elite Looter (Assistant Developer)</a>
-  <a aria-label="Tool to find songs shared between rhythm games!" data-balloon-pos="up" class= "osubemani animate__animated animate__delay-5s animate__slower animate__fadeInLeft" href="https://github.com/Suprnova/rhythm-games-converter" target="_blank" style="text-decoration:none">Rhythm Games Converter</a>
-  <a aria-label="An esoteric programming language based on PogChamp and other emotes!" data-balloon-pos="up" class= "pog animate__animated animate__delay-5s animate__slower animate__fadeInLeft" href="https://github.com/Suprnova/PogCode" target="_blank" style="text-decoration:none">PogCode</a>
-  <a aria-label="Show what music you're listening to on Spotify in a text file!" data-balloon-pos="up" class= "nover animate__animated animate__delay-5s animate__slower animate__fadeInLeft" href="https://github.com/Suprnova/Nover" target="_blank" style="text-decoration:none">Nover</a>
-  <a aria-label="Convert ffmpeg files into a .bik usable in all Heavy Iron Renderware games!" data-balloon-pos="up" class= "bik animate__animated animate__delay-5s animate__slower animate__fadeInLeft" href="https://github.com/Suprnova/Heavy-Iron-Bik-Converter" target="_blank" style="text-decoration:none">Heavy Iron Bik Converter</a>
-  <a aria-label="Have your microphone muted when people donate to your Twitch stream!" data-balloon-pos="up" class= "mutefortwitch animate__animated animate__delay-5s animate__slower animate__fadeInLeft" href="https://github.com/Suprnova/mute-for-twitch" target="_blank" style="text-decoration:none">Mute for Twitch</a>
-  <a aria-label="A research/reverse engineering document on Chunithm's files!" data-balloon-pos="up" class= "chunithm animate__animated animate__delay-5s animate__slower animate__fadeInLeft" href="https://github.com/Suprnova/Chunithm-Research" target="_blank" style="text-decoration:none">Chunithm Research</a>
-  <a class="opensource hvr-bounce-in" href="https://github.com/Suprnova/suprnova.dev" target="_blank">
-	<img src="index_files/open source.png" height="40">
-  </a>
-</div>
+<body class="text-center">
+    <div class="container">
+        <h1>hi, i'm nova</h1>
+        <p>and i'm an amateur c# developer</p>
+        <div class="socials">
+            <a href="https://twitter.com/suprnova123" class="bi bi-twitter" target="_blank"></a>
+            <a href="https://github.com/Suprnova" class="bi bi-github" target="_blank"></a>
+            <a href="https://github.com/Suprnova/suprnova.dev" class="bi bi-file-earmark-code" target="_blank"></a>
+        </div>
+        <img src="img/goose.gif" alt="Goose">
+        <h2>Projects</h2>
+        <div class="projects">
+            <a class="grid-col-span-6 elite" href="https://top.gg/bot/elitelooter" target="_blank">
+                <div class="icon-left">
+                    <img src="img/el_logo.svg" alt="">
+                </div>
+                <div class="text-right">
+                    <h3>Elite Looter (Assistant Developer)</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet hendrerit ante. Quisque at scelerisque quam.</p>
+                </div>
+            </a>
+            <a class="grid-col-span-6 chunithm" href="https://github.com/Suprnova/Chunithm-Research" target="_blank">
+                <div class="icon-left">
+                    <img src="img/el_logo.svg" alt="">
+                </div>
+                <div class="text-right">
+                    <h3>Chunithm Research</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet hendrerit ante. Quisque at scelerisque quam.</p>
+                </div>
+            </a>
+            <a class="grid-col-span-3 pogcode" href="https://github.com/Suprnova/PogCode" target="_blank">
+                <div class="text-container">
+                    <h3>PogCode</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet hendrerit ante. Quisque at scelerisque quam.</p>
+                </div>
+            </a>
+            <a class="grid-col-span-3 rgc" href="https://github.com/Suprnova/rhythm-games-converter" target="_blank">
+                <div class="text-container">
+                    <h3>Rhythm Games Converter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet hendrerit ante. Quisque at scelerisque quam.</p>
+                </div>
+            </a>
+            <a class="grid-col-span-2 bik" href="https://github.com/Suprnova/Heavy-Iron-Bik-Converter" target="_blank">
+                <div class="text-container">
+                    <h3>Heavy Iron Bik Converter</h3>
+                </div>
+            </a>
+            <a class="grid-col-span-2 shell" href="https://github.com/Suprnova/Shell-City-Mod-Loader" target="_blank">
+                <div class="text-container">
+                    <h3>Shell City</h3>
+                </div>
+            </a>
+            <a class="grid-col-span-2 nover" href="https://github.com/Suprnova/Nover" target="_blank">
+                <div class="text-container">
+                    <h3>Nover</h3>
+                </div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
