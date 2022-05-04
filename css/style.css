@@ -3,8 +3,6 @@ body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 300% 300%;
     animation: gradient 30s ease infinite;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
 }
 
 body,
@@ -17,10 +15,22 @@ h1 {
     font-weight: 700;
     margin-bottom: 0;
 }
+h1, .goose-img, h2, .socials {
+    opacity: 0;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    animation: fadein 2s;
+    animation-fill-mode: forwards;
+}
+
+.goose-img {
+    animation-delay: 4s;
+}
 
 h2 {
     font-size: 2.5rem;
     font-weight: 700;
+    animation-delay: 5s; 
 }
 
 h3 {
@@ -40,10 +50,25 @@ a {
 
 img {
     height: 150px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.socials a {
+.container {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.anim-correction {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.socials {
+    animation-delay: 4.7s;
+}
+
+.socials a, .source-corner {
     font-size: 3rem;
     opacity: 0.8;
     transition: 0.3s;
@@ -54,12 +79,12 @@ img {
 .bi-twitter {
     padding-right: 4rem;
 }
-.bi-file-earmark-code {
+.source-corner {
     position: absolute;
     top: 0.75rem;
     right: 0.75rem;
 }
-.socials a:hover {
+.socials a:hover, .source-corner {
     color: #FFF;
     opacity: 1;
 }
@@ -76,11 +101,16 @@ img {
     width: 70%;
 }
 
-
 .projects {
     display: grid;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    transform: translateX(-125%);
+    -webkit-animation: fadeside 2s;
+    -moz-animation: fadeside 2s;
+    animation: fadeside 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
 }
 .projects p {
     font-size: 1rem;
@@ -139,6 +169,7 @@ img {
 .bik:hover, .shell:hover, .nover:hover {
     background-color: hsl(12, 79%, 67%);
 }
+
 
 @keyframes gradient {
 	0% {
@@ -228,4 +259,36 @@ img {
     .bi-file-earmark-code {
         padding-left: 1rem;
     }
+}
+
+/* Animations */
+/* Fade in */
+@keyframes fadein {
+    from { opacity: 0; transform: translate3d(0,40px,0); }
+    to   { opacity: 1; transform: translate3d(0,0,0); }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; transform: translate3d(0,40px,0); }
+    to   { opacity: 1; transform: translate3d(0,0,0); }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; transform: translate3d(0,40px,0); }
+    to   { opacity: 1; transform: translate3d(0,0,0); }
+}
+
+@keyframes fadeside {
+    from { transform: translateX(-125%)}
+    to   { transform: translateX(0)}
+}
+
+@-moz-keyframes fadeside {
+    from { transform: translateX(-125%)}
+    to   { transform: translateX(0)}
+}
+
+@-webkit-keyframes fadeside {
+    from { transform: translateX(-125%)}
+    to   { transform: translateX(0)}
 }
