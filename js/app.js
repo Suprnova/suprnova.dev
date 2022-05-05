@@ -63,7 +63,7 @@ function unwidenGoose() {
             goose.style.width = gooseExpandWidth + "px";
             gooseUnwideTimeout = setTimeout(unwidenGoose, 20);
         } else {
-            goose.style.width = gooseWidth + "px";
+            goose.style.width = "";
             gooseExpandWidth = gooseWidth;
         }
     }

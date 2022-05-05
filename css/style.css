@@ -84,7 +84,7 @@ img {
     top: 0.75rem;
     right: 0.75rem;
 }
-.socials a:hover, .source-corner {
+.socials a:hover, .source-corner:hover {
     color: #FFF;
     opacity: 1;
 }
@@ -99,6 +99,9 @@ img {
 }
 .text-right {
     width: 70%;
+}
+.chunithm .icon-left {
+    padding: 0.5rem;
 }
 
 .projects {
@@ -198,6 +201,12 @@ img {
     }
     .chunithm {
         grid-row-start: 2;
+    }
+    .icon-left {
+        width: 28%;
+    }
+    .text-right {
+        width: 72%;
     }
 }
 @media (min-width: 992px) {
