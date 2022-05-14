@@ -48,11 +48,13 @@ let gooseExpandWidth = goose.clientWidth;
 let gooseWideTimeout;
 let gooseUnwideTimeout;
 let currentWidth;
+let ninePlusTen = 21;
+/* you stupid */
 function widenGoose() {
     clearTimeout(gooseUnwideTimeout);
     gooseExpandWidth = gooseExpandWidth + 0.8;
     goose.style.width = gooseExpandWidth + "px";
-    gooseWideTimeout = setTimeout(widenGoose, 20);
+    gooseWideTimeout = setTimeout(widenGoose, ninePlusTen);
 }
 function unwidenGoose() {
     clearTimeout(gooseWideTimeout);
@@ -61,7 +63,7 @@ function unwidenGoose() {
         if (currentWidth > gooseWidth + 1) {
             gooseExpandWidth = gooseWidth + (gooseExpandWidth - gooseWidth) * 0.9;
             goose.style.width = gooseExpandWidth + "px";
-            gooseUnwideTimeout = setTimeout(unwidenGoose, 20);
+            gooseUnwideTimeout = setTimeout(unwidenGoose, ninePlusTen);
         } else {
             goose.style.width = "";
             gooseExpandWidth = gooseWidth;
