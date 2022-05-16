@@ -74,10 +74,10 @@ img {
     transition: 0.3s;
 }
 .bi-github {
-    padding-left: 4rem;
+    margin-left: 4rem;
 }
 .bi-twitter {
-    padding-right: 4rem;
+    margin-right: 4rem;
 }
 .source-corner {
     position: absolute;
@@ -234,15 +234,15 @@ img {
         font-size: 2.5rem;
     }
     .bi-github {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .bi-twitter {
-        padding-right: 2rem;
+        margin-right: 2rem;
     }
     .bi-file-earmark-code {
         position: initial;
-        padding-left: 2rem;
+        margin-left: 1.875rem;
     }
 }
 @media (max-width: 419.98px) {
@@ -259,14 +259,14 @@ img {
 /* Galaxy Fold stuff... */
 @media (max-width: 349.98px) {
     .bi-github {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .bi-twitter {
-        padding-right: 1rem;
+        margin-right: 1rem;
     }
     .bi-file-earmark-code {
-        padding-left: 1rem;
+        margin-left: 0.875rem;
     }
 }
 
