@@ -52,9 +52,11 @@ let ninePlusTen = 21;
 /* you stupid */
 function widenGoose() {
     clearTimeout(gooseUnwideTimeout);
-    gooseExpandWidth = gooseExpandWidth + 0.8;
-    goose.style.width = gooseExpandWidth + "px";
-    gooseWideTimeout = setTimeout(widenGoose, ninePlusTen);
+    if (gooseExpandWidth < window.innerWidth * 0.6) {
+        gooseExpandWidth = gooseExpandWidth + 0.8;
+        goose.style.width = gooseExpandWidth + "px";
+        gooseWideTimeout = setTimeout(widenGoose, ninePlusTen);
+    }
 }
 function unwidenGoose() {
     clearTimeout(gooseWideTimeout);
