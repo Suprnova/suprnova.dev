@@ -41,10 +41,12 @@ function writeText() {
 
 /* Goose code */
 const goose = document.querySelector('#goose');
-goose.addEventListener("mouseover", widenGoose);
-goose.addEventListener("mouseout", unwidenGoose);
-const gooseWidth = goose.clientWidth;
-let gooseExpandWidth = goose.clientWidth;
+if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    goose.addEventListener("mouseover", widenGoose);
+    goose.addEventListener("mouseout", unwidenGoose);
+}
+const gooseWidth = 95;
+let gooseExpandWidth = 95;
 let gooseWideTimeout;
 let gooseUnwideTimeout;
 let currentWidth;
