@@ -1,0 +1,47 @@
+---
+export interface Props {
+	count?: number;
+}
+
+import BlogCard from "./BlogCard.astro";
+
+const posts = await Astro.glob('../../pages/blog/*.md');
+const sortedPosts = posts.sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime());
+
+const { count } = Astro.props;
+---
+
+<section id="blog" class="flex flex-col content-center items-center justify-center mb-8">
+    <h1 class="text-center text-4xl md:text-5xl font-bold my-8 md:my-16 font-heading">
+		Blogs from the mouth of <span class="jumbo-gradient">nova</span>.
+    </h1>
+	<div class="flex flex-col gap-8 items-center mb-8">
+		{
+			sortedPosts.slice(0, count).map((post) => (
+				<BlogCard {post} />
+			))
+		}
+	</div>
+	<slot />
+</section>
+
+<style>
+    .jumbo-gradient {
+		background: linear-gradient(0deg, #a45fe9, #ff69f3);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: shiftGradient 4s ease-in-out infinite;
+	}
+
+    @keyframes shiftGradient {
+		0%, 100% {
+			background-position-y: 0%;
+		}
+		50% {
+			background-position-y: 80%;
+		}
+	}
+</style>

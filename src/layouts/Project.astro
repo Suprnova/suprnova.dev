@@ -1,0 +1,22 @@
+---
+const { frontmatter } = Astro.props;
+
+import Layout from './Layout.astro';
+---
+<Layout title={frontmatter.title + " - "}>
+    <h1>{frontmatter.title}</h1>
+    <!-- image carousel -->
+    <div class="carousel">
+        {frontmatter.images.map((image: string) => (
+            <img src={image} />
+        ))}
+    </div>
+    <p>Technologies:</p>
+    <ul>
+        {frontmatter.tech.map((tech: string) => (
+            <li><p>{tech}</p></li>
+        ))}
+    </ul>
+    <hr>
+    <slot />
+</Layout>

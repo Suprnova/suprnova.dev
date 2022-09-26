@@ -1,0 +1,57 @@
+---
+const { frontmatter } = Astro.props;
+
+import Layout from './Layout.astro';
+---
+<Layout title={frontmatter.title + " - "}>
+    <div class="py-8 flex flex-col self-center w-2/3 lg:w-5/12">
+        <h1 class="text-6xl px-0 font-bold text-left">{frontmatter.title}</h1>
+        <img class="md:w-2/3 aspect-video rounded-md shadow-md scale-90 border-accent border-dashed border-2" src={frontmatter.image} alt={frontmatter.title} />
+        <p class="italic text-left">{frontmatter.description}</p>
+    </div>
+    <hr class="border-accent border-dashed border-2 w-1/2 self-center" />
+	<main class="flex flex-col self-center w-2/3 lg:w-5/12">
+		<article class="blog-content flex flex-col self-center">
+			<slot />
+		</article>
+	</main>
+</Layout>
+
+<style is:global>
+	.blog-content h1 {
+		@apply text-3xl sm:text-4xl md:text-6xl text-left px-0 italic underline-offset-4 underline text-accent;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.blog-content h2 {
+		@apply text-2xl sm:text-3xl md:text-5xl text-left px-0 text-white;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.blog-content p {
+		@apply text-base sm:text-xl md:text-2xl text-left text-white;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.blog-content a {
+		@apply text-accent underline;
+	}
+
+	.blog-content blockquote {
+		@apply text-base sm:text-xl md:text-2xl text-left text-white;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+    .blog-content del {
+		@apply text-accent;
+	}
+
+	.blog-content li {
+		@apply text-base sm:text-xl md:text-2xl text-left text-white;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.blog-content ul {
+		@apply list-disc list-inside;
+	}
+</style>

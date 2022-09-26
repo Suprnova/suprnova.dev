@@ -1,0 +1,63 @@
+---
+export interface Props {
+	title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></noscript>
+		<meta name="description" content="mreow???" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}suprnova.dev</title>
+	</head>
+	<div class="goose">
+		<body>
+			<div class="flex flex-col w-screen h-screen min-h-[720px]">
+				<slot />
+			</div>
+		</body>
+	</div>
+</html>
+<style>
+	.goose {
+		@apply flex bg-secondary overflow-x-auto;
+	}
+</style>
+
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+	/* why doesnt this work :( */
+	html {
+  		scroll-behavior: smooth;
+	}
+
+    h1 {
+		@apply pt-6 px-6 text-5xl sm:text-7xl md:text-9xl text-center text-white;
+		font-family: 'Comfortaa', cursive;
+	}
+
+	h2 {
+		@apply py-3 md:py-6 px-6 text-lg sm:text-2xl md:text-4xl text-center;
+		font-family: 'Comfortaa', cursive;
+	}
+
+	h3 {
+		@apply py-3 md:py-6 px-6 text-lg sm:text-2xl md:text-4xl text-center;
+		font-family: 'Comfortaa', cursive;
+	}
+
+	p {
+		@apply py-3 md:py-6 text-base sm:text-xl md:text-2xl text-center text-white;
+		font-family: 'Comfortaa', cursive;
+	}
+</style>
