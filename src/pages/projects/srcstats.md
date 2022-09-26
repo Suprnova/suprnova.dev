@@ -4,18 +4,18 @@ title: SRCStats
 slug: srcstats
 description: The suite of tools and services for statistics on every speedrunner.
 tech:
-    - C#
-    - Go
-    - JavaScript
-    - MongoDB
-    - SQL
-    - Bootstrap
-    - Docker
-    - Azure
-    - CI/CD
+  - C#
+  - Go
+  - JavaScript
+  - MongoDB
+  - SQL
+  - Bootstrap
+  - Docker
+  - Azure
+  - CI/CD
 url: https://github.com/SRCStats
 images:
-    - https://media.discordapp.net/attachments/446321271635050508/1015487738570612756/sailor_hit_me_up.gif
+  - https://media.discordapp.net/attachments/446321271635050508/1015487738570612756/sailor_hit_me_up.gif
 ---
 
 # Website

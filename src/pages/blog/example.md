@@ -12,7 +12,7 @@ image: "https://media.discordapp.net/attachments/448951116634390546/101142311557
 ## Lycias distulit parce miracula petere campus fibras
 
 Lorem markdownum, exitio et laesa; mihi manus avertere, in hostem pervenisse.
-Non catenas. *Coronas mare*. Nunc et mutari, equos queat medulla; sumus ritu
+Non catenas. _Coronas mare_. Nunc et mutari, equos queat medulla; sumus ritu
 virginis tuaque paene mota pes, et vicinia quietis.
 
 1. Suos reducto placere
@@ -20,18 +20,18 @@ virginis tuaque paene mota pes, et vicinia quietis.
 3. Erat Illa petitos obsequitur rapiunt sensi forma
 4. Pectore poteras gurgite acclinata coniecta clamore lumina
 
-Multaque sine sed sit, at exigite: quidam *dixit bracchia* et caelo hoc tellure:
-aquarum quae fuit! Somni facitote Glaucus? Vitat platanus irascitur *illis
-Etruscam*. Moveant nodis Orpheu congestos me satae, At auxilium cornua. Sero
+Multaque sine sed sit, at exigite: quidam _dixit bracchia_ et caelo hoc tellure:
+aquarum quae fuit! Somni facitote Glaucus? Vitat platanus irascitur _illis
+Etruscam_. Moveant nodis Orpheu congestos me satae, At auxilium cornua. Sero
 victa infestus Silvanusque mori; fecit teque dolet maior.
 
 ## Principium fauces invidiaque forte deplanxere haut sic
 
-Positu praemia *habenis*, est bene querenda cognata turis? Sibi eram nam timeam,
+Positu praemia _habenis_, est bene querenda cognata turis? Sibi eram nam timeam,
 torpor tale, frangit **est abest**. Neci licebit; tenus parentes [tradit
 limosaque](http://www.est-litore.com/) fistula nunc oculos Philomela ictus.
 Potenti fulmen **et omnis victricemque** posse; laetaris cauda consumptis
-ascendere ferro. Sorores *atria esset* laudem, erat sagitta sine furorem quoque.
+ascendere ferro. Sorores _atria esset_ laudem, erat sagitta sine furorem quoque.
 
     if (ict * 2) {
         aiffNetmask = linux;
@@ -59,7 +59,7 @@ Aeacidae limina patruo, ter galeamque.
 Ferrum excussam apertas violentior ossa faucesque O oblitae flamine sine vel
 reor, fontes plura, inque. [Solitumque](http://www.nunc.io/exi-artes.html)
 precantia illa: trado condar ausum vetitorum modo **nec** semesarumque, vasto
-ensem sentis *de cedit et* tollebar!
+ensem sentis _de cedit et_ tollebar!
 
 > Iuvenemque dryades caelestique tamen **zephyris** mortali contigit ut fuisset
 > pectus umbrarumque bellum adspicit sub illi eadem meae multos, munus! Gnatis

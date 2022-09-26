@@ -1,199 +1,220 @@
 ---
-import BlogList from '../components/blog/BlogList.astro';
-import Layout from '../layouts/Layout.astro';
+import BlogList from "../components/blog/BlogList.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<div class="flex flex-col w-full">
-		<header class="flex flex-col justify-center w-full self-start">
-			<h1>hi, i'm <span class="jumbo-gradient">nova</span>.</h1>
-			<h2 class="text-white">and i'm an amateur fullstack developer.</h2>
-		</header>
-		<section class="grid grid-rows-2 grid-cols-4 self-center h-[36rem] w-11/12 mb-12">
-			<div class="card-wrapper col-span-full md:col-span-2 row-span-2">
-				<a href="/projects" class="card">
-					<h2 class='text-center place-self-center text-5xl text-white'>Projects</h2>
-					<div class="scroller w-full" aria-hidden="true">
-						<ul class="scroller-content">
-							<li class="tech devicon-mongodb-plain colored" />
-							<li class="tech devicon-python-plain colored" />
-							<li class="tech devicon-go-plain colored" />
-							<li class="tech devicon-svelte-plain colored" />
-							<li class="tech devicon-html5-plain colored" />
-							<li class="tech devicon-docker-plain colored" />
-							<li class="tech devicon-css3-plain colored" />
-							<li class="tech devicon-csharp-plain colored" />
-							<li class="tech devicon-microsoftsqlserver-plain colored" />
-							<li class="tech devicon-tailwindcss-plain colored" />
-							<li class="tech devicon-javascript-plain colored" />
-							<li class="tech devicon-bootstrap-plain colored" />
-							<li class="tech devicon-azure-plain colored" />
-						</ul>
-						<ul class="scroller-content">
-							<li class="tech devicon-mongodb-plain colored" />
-							<li class="tech devicon-python-plain colored" />
-							<li class="tech devicon-go-plain colored" />
-							<li class="tech devicon-svelte-plain colored" />
-							<li class="tech devicon-html5-plain colored" />
-							<li class="tech devicon-docker-plain colored" />
-							<li class="tech devicon-css3-plain colored" />
-							<li class="tech devicon-csharp-plain colored" />
-							<li class="tech devicon-microsoftsqlserver-plain colored" />
-							<li class="tech devicon-tailwindcss-plain colored" />
-							<li class="tech devicon-javascript-plain colored" />
-							<li class="tech devicon-bootstrap-plain colored" />
-							<li class="tech devicon-azure-plain colored" />
-						</ul>
-					</div>
-					<p class="text-white">I use lots of different technologies in my projects! Come check out some of them!</p>
-				</a>
-			</div>
-			<div class="card-wrapper col-span-full md:col-span-2">
-				<div class="card overflow-hidden">
-					<h2 class='text-center place-self-center text-5xl text-white'>Socials</h2>
-					<div class="socials flex transition-all duration-300 ease-in-out h-0 opacity-0 w-full gap-12 will-change-transform justify-center">
-						<a href="https://twitter.com/suprnova123" aria-label="Twitter">
-							<i class="social devicon-twitter-original colored"></i>
-						</a>
-						<a href="https://github.com/suprnova" aria-label="GitHub">
-							<i class="social devicon-github-original"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="card-wrapper col-span-full md:col-span-1">
-				<a href="#blog" class="card">
-					<h2 class='text-center place-self-center text-5xl text-white'>Blog</h2>
-				</a>
-			</div>
-			<div class="card-wrapper col-span-full md:col-span-1">
-				<a href="/about" class="card">
-					<h2 class='text-center place-self-center text-5xl text-white'>About me</h2>
-				</a>
-			</div>
-		</section>
-		<BlogList count={3}>
-			<a href="/blog" class="text-center text-white text-2xl font-['Comfortaa'] bg-teal-600 hover:bg-teal-800 transition rounded-lg my-4 px-4 py-2">See more...</a>
-		</BlogList>
-	</div>
+  <div class="flex flex-col w-full">
+    <header class="flex flex-col justify-center w-full self-start">
+      <h1>hi, i'm <span class="jumbo-gradient">nova</span>.</h1>
+      <h2 class="text-white">and i'm an amateur fullstack developer.</h2>
+    </header>
+    <section
+      class="grid grid-rows-2 grid-cols-4 self-center h-[36rem] w-11/12 mb-12"
+    >
+      <div class="card-wrapper col-span-full md:col-span-2 row-span-2">
+        <a href="/projects" class="card">
+          <h2 class="text-center place-self-center text-5xl text-white">
+            Projects
+          </h2>
+          <div class="scroller w-full" aria-hidden="true">
+            <ul class="scroller-content">
+              <li class="tech devicon-mongodb-plain colored"></li>
+              <li class="tech devicon-python-plain colored"></li>
+              <li class="tech devicon-go-plain colored"></li>
+              <li class="tech devicon-svelte-plain colored"></li>
+              <li class="tech devicon-html5-plain colored"></li>
+              <li class="tech devicon-docker-plain colored"></li>
+              <li class="tech devicon-css3-plain colored"></li>
+              <li class="tech devicon-csharp-plain colored"></li>
+              <li class="tech devicon-microsoftsqlserver-plain colored"></li>
+              <li class="tech devicon-tailwindcss-plain colored"></li>
+              <li class="tech devicon-javascript-plain colored"></li>
+              <li class="tech devicon-bootstrap-plain colored"></li>
+              <li class="tech devicon-azure-plain colored"></li>
+            </ul>
+            <ul class="scroller-content">
+              <li class="tech devicon-mongodb-plain colored"></li>
+              <li class="tech devicon-python-plain colored"></li>
+              <li class="tech devicon-go-plain colored"></li>
+              <li class="tech devicon-svelte-plain colored"></li>
+              <li class="tech devicon-html5-plain colored"></li>
+              <li class="tech devicon-docker-plain colored"></li>
+              <li class="tech devicon-css3-plain colored"></li>
+              <li class="tech devicon-csharp-plain colored"></li>
+              <li class="tech devicon-microsoftsqlserver-plain colored"></li>
+              <li class="tech devicon-tailwindcss-plain colored"></li>
+              <li class="tech devicon-javascript-plain colored"></li>
+              <li class="tech devicon-bootstrap-plain colored"></li>
+              <li class="tech devicon-azure-plain colored"></li>
+            </ul>
+          </div>
+          <p class="text-white">
+            I use lots of different technologies in my projects! Come check out
+            some of them!
+          </p>
+        </a>
+      </div>
+      <div class="card-wrapper col-span-full md:col-span-2">
+        <div class="card overflow-hidden">
+          <h2 class="text-center place-self-center text-5xl text-white">
+            Socials
+          </h2>
+          <div
+            class="socials flex transition-all duration-300 ease-in-out h-0 opacity-0 w-full gap-12 will-change-transform justify-center"
+          >
+            <a href="https://twitter.com/suprnova123" aria-label="Twitter">
+              <i class="social devicon-twitter-original colored"></i>
+            </a>
+            <a href="https://github.com/suprnova" aria-label="GitHub">
+              <i class="social devicon-github-original"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-span-full md:col-span-1">
+        <a href="#blog" class="card">
+          <h2 class="text-center place-self-center text-5xl text-white">
+            Blog
+          </h2>
+        </a>
+      </div>
+      <div class="card-wrapper col-span-full md:col-span-1">
+        <a href="/about" class="card">
+          <h2 class="text-center place-self-center text-5xl text-white">
+            About me
+          </h2>
+        </a>
+      </div>
+    </section>
+    <BlogList count={3}>
+      <a
+        href="/blog"
+        class="text-center text-white text-2xl font-['Comfortaa'] bg-teal-600 hover:bg-teal-800 transition rounded-lg my-4 px-4 py-2"
+        >See more...</a
+      >
+    </BlogList>
+  </div>
 </Layout>
 
 <style>
-	html {
-		scroll-behavior: smooth;
-	}
+  html {
+    scroll-behavior: smooth;
+  }
 
-	.card-wrapper {
-		@apply rounded-[6rem] m-2;
-	}
+  .card-wrapper {
+    @apply rounded-[6rem] m-2;
+  }
 
-	.card {
-		@apply flex flex-col justify-center items-center bg-secondary-500 rounded-[6rem] border-solid border-2 border-gray-400 transition duration-300 ease-in-out h-full will-change-auto;
-	}
+  .card {
+    @apply flex flex-col justify-center items-center bg-secondary-500 rounded-[6rem] border-solid border-2 border-gray-400 transition duration-300 ease-in-out h-full will-change-auto;
+  }
 
-	.card-wrapper:hover > .card {
-		@apply scale-95;
-		transition: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-	}
+  .card-wrapper:hover > .card {
+    @apply scale-95;
+    transition: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
 
-	.card-wrapper:hover > .card > .scroller { 
-		@apply h-24 md:h-32 opacity-100 transform-gpu;
-		transition: expand 300ms ease-in-out forwards; 
-	}
+  .card-wrapper:hover > .card > .scroller {
+    @apply h-24 md:h-32 opacity-100 transform-gpu;
+    transition: expand 300ms ease-in-out forwards;
+  }
 
-	.card-wrapper:hover > .card > .socials { 
-		@apply h-12 opacity-100 transform-gpu;
-		transition: expand 300ms ease-in-out forwards; 
-	}
+  .card-wrapper:hover > .card > .socials {
+    @apply h-12 opacity-100 transform-gpu;
+    transition: expand 300ms ease-in-out forwards;
+  }
 
-	.card-wrapper:active > .card {
-		@apply scale-95;
-		transition: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-	}
+  .card-wrapper:active > .card {
+    @apply scale-95;
+    transition: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
 
-	.card-wrapper:active > .card > .scroller { 
-		@apply h-24 md:h-32 opacity-100 transform-gpu;
-		transition: expand 300ms ease-in-out forwards; 
-	}
+  .card-wrapper:active > .card > .scroller {
+    @apply h-24 md:h-32 opacity-100 transform-gpu;
+    transition: expand 300ms ease-in-out forwards;
+  }
 
-	.card-wrapper:active > .card > .socials { 
-		@apply h-12 opacity-100 transform-gpu;
-		transition: expand 300ms ease-in-out forwards; 
-	}
+  .card-wrapper:active > .card > .socials {
+    @apply h-12 opacity-100 transform-gpu;
+    transition: expand 300ms ease-in-out forwards;
+  }
 
-	.scroller {
-		@apply transition-all duration-300 ease-in-out h-0 opacity-0;
-		--gap: 1rem;
-		display: flex;
-		overflow: hidden;
-		gap: var(--gap);
-	}
+  .scroller {
+    @apply transition-all duration-300 ease-in-out h-0 opacity-0;
+    --gap: 1rem;
+    display: flex;
+    overflow: hidden;
+    gap: var(--gap);
+  }
 
-	.scroller-content {
-		flex-shrink: 0;
-		display: flex;
-		justify-content: space-around;
-		min-width: 100%;
-		gap: var(--gap);
-		animation: scroll 10s linear infinite;
-	}
+  .scroller-content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: var(--gap);
+    animation: scroll 10s linear infinite;
+  }
 
-	.tech {
-		@apply text-7xl h-24 md:text-9xl md:h-36;
-		text-shadow: 1px 1px #000000;
-	}
+  .tech {
+    @apply text-7xl h-24 md:text-9xl md:h-36;
+    text-shadow: 1px 1px #000000;
+  }
 
-	.social {
-		@apply text-3xl h-8 md:text-7xl md:h-16;
-		text-shadow: 1px 1px #000000;
-	}
-	
-	.jumbo-gradient {
-		background: linear-gradient(0deg, #a45fe9, #ff69f3);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: shiftGradient 4s ease-in-out infinite;
-	}
+  .social {
+    @apply text-3xl h-8 md:text-7xl md:h-16;
+    text-shadow: 1px 1px #000000;
+  }
 
-	/* todo: fix this :( */
-	@keyframes pulse {
-		0%, 100% {
-			opacity: 1;
-		}
-		50% {
-			opacity: 0.85;
-		}
-	}
+  .jumbo-gradient {
+    background: linear-gradient(0deg, #a45fe9, #ff69f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: shiftGradient 4s ease-in-out infinite;
+  }
 
-	@keyframes shiftGradient {
-		0%, 100% {
-			background-position-y: 0%;
-		}
-		50% {
-			background-position-y: 80%;
-		}
-	}
+  /* todo: fix this :( */
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.85;
+    }
+  }
 
-	@keyframes scroll {
-  		from {
-    		transform: translateX(0);
-  		}
-  		to {
-    		transform: translateX(calc(-100% - var(--gap)));
-  		}
-	}
+  @keyframes shiftGradient {
+    0%,
+    100% {
+      background-position-y: 0%;
+    }
+    50% {
+      background-position-y: 80%;
+    }
+  }
 
-	@keyframes expand {
-		0% {
-			transform: scaleY(0rem);
-			@apply my-0;
-		}
-		100% {
-			transform: scaleY(8rem);
-			@apply my-8;
-		}
-	}
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      transform: scaleY(0rem);
+      @apply my-0;
+    }
+    100% {
+      transform: scaleY(8rem);
+      @apply my-8;
+    }
+  }
 </style>

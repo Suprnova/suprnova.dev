@@ -11,7 +11,7 @@ image: "https://media.discordapp.net/attachments/448951116634390546/100273802162
 
 ## Iam parari Nelei adyto silvarum exegit perstant
 
-Lorem markdownum quadripedes *caligine rauca insilit* Iovisque sacrorum dapibus
+Lorem markdownum quadripedes _caligine rauca insilit_ Iovisque sacrorum dapibus
 agricolis et operum anxia: aras **vix**. Grata Cupidinis?
 
     var dial = 821103;
@@ -59,6 +59,6 @@ horamque murmure gemino: propter solus, dat sed dies.
 - Solverat mirantia vulnera
 
 Delubraque e quoniam fortissima **certis**, ad umeri, admovet brevis Saturnia.
-Patiare versa; nulla sola muta nimbisque. Nubes petis *praecipue sucis potentis*
+Patiare versa; nulla sola muta nimbisque. Nubes petis _praecipue sucis potentis_
 nudaeque illae natorum unus. Palamedes animi,; renovat paternos Ceycis, vitro
 teretes. Intellecta neque, vos, illa, tandem serpens.

@@ -30,7 +30,7 @@ patriam, suos orbes cantibus. Captivarumque parte geminaque, iunxit satis, ille
 ubi! Inguina diu ducimus, in pueroque augurio contigerat fides nec adepta forti
 coronis Ulixes aliquid.
 
-Undas obscenae nec mitte omni sociae *memorabile* longo, lapidem atlas Syron
+Undas obscenae nec mitte omni sociae _memorabile_ longo, lapidem atlas Syron
 haeserunt auctam struxerit seque. De ne arcus. Infelix albi recepit ante,
 papilione neque nemorosam frigore sibi erres?
 
