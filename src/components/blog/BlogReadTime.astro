@@ -1,0 +1,14 @@
+---
+export interface Props {
+  content: string;
+}
+
+const { content } = Astro.props;
+const wordCount = content.trim().split(/\s+/).length;
+console.log(wordCount);
+const readingTime = Math.ceil(wordCount / 200);
+---
+
+<span>
+  {readingTime} minute{readingTime == 1 ? "" : "s"} to read
+</span>
