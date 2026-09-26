@@ -1,3 +1,7 @@
+:root {
+    --animation-start-position: -100vw;
+}
+
 body {
     font-family: "Comfortaa", sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -108,7 +112,7 @@ img {
     display: grid;
     gap: 1rem;
     margin-top: 1.5rem;
-    transform: translateX(-125%);
+    transform: translateX(var(--animation-start-position));
     -webkit-animation: fadeside 2s;
     -moz-animation: fadeside 2s;
     animation: fadeside 2s;
@@ -288,16 +292,16 @@ img {
 }
 
 @keyframes fadeside {
-    from { transform: translateX(-125%)}
+    from { transform: translateX(var(--animation-start-position))}
     to   { transform: translateX(0)}
 }
 
 @-moz-keyframes fadeside {
-    from { transform: translateX(-125%)}
+    from { transform: translateX(var(--animation-start-position))}
     to   { transform: translateX(0)}
 }
 
 @-webkit-keyframes fadeside {
-    from { transform: translateX(-125%)}
+    from { transform: translateX(var(--animation-start-position))}
     to   { transform: translateX(0)}
 }
